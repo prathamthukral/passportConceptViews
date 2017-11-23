@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://passport.techundertwenty.com/home -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="NEDcYkQlUEgeprjN4uLfFubJerD9pLv1oXmXlLZz">
+    <title>TU20 Passport</title>
+    <!-- Styles -->
+    <link href="./landingPage_files/app.css" rel="stylesheet">
+    <script>
+    window.Event = ""
+    </script>
+    <style>
+    table {
+        margin: auto;
+    }
+
+    h1 {
+        margin: 40px;
+    }
+
+    th,
+    td {
+        padding: 20px;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" data-toggle="collapse" data-target="#app-navbar-collapse" class="navbar-toggle collapsed"><span class="sr-only">Toggle Navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a href="http://passport.techundertwenty.com/" class="navbar-brand">
+                        TU20 Passport
+                    </a></div>
+                <div id="app-navbar-collapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        &nbsp;
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown"><a href="http://passport.techundertwenty.com/home#" data-toggle="dropdown" role="button" aria-expanded="false" class="dropdown-toggle">
+                                    Pratham Thukral <span class="caret"></span></a>
+                            <ul role="menu" class="dropdown-menu">
+                                <li><a href="http://passport.techundertwenty.com/home">Home</a></li>
+                                <li class="divider"></li>
+                                <li><a href="http://passport.techundertwenty.com/logout" onclick="event.preventDefault();
+                                                     document.getElementById(&#39;logout-form&#39;).submit();">
+                                            Logout
+                                        </a>
+                                    <form id="logout-form" action="http://passport.techundertwenty.com/logout" method="POST" style="display: none;">
+                                        <input type="hidden" name="_token" value="NEDcYkQlUEgeprjN4uLfFubJerD9pLv1oXmXlLZz">
+                                    </form>
+                                </li>
+                                <li><a href="http://passport.techundertwenty.com/kiosk">
+                                                Kiosk
+                                            </a></li>
+                                <li><a href="http://passport.techundertwenty.com/profile">
+                                            Profile
+                                        </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h1 class="text-center">Welcome {Name}</h1>
+                    <div class="panel panel-default">
+                        <div class="panel-heading text-center">My Groups</div>
+                        <div class="panel-body">
+                            <table class="table table-striped">
+                                <thead>
+                                    <th>Group</th>
+                                    <th>Announcement</th>
+                                    <th>Timestamp</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>White Oaks Chapter</td>
+                                        <td>
+                                            Remember to come out to our chapter meeting tomorrow at 3pm!
+                                        </td>
+                                        <td>
+                                            {timestamp}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>TU20 General</td>
+                                        <td>
+                                            University Guidance Tomorrow @ 8PM!
+                                        </td>
+                                        <td>
+                                            {timestamp}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>TU20 Cup</td>
+                                        <td>
+                                            Sign your teams up asap!
+                                        </td>
+                                        <td>
+                                            {timestamp}
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="./landingPage_files/app.js.download"></script>
+</body>
+
+</html>
